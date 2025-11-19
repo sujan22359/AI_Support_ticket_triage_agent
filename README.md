@@ -21,8 +21,9 @@ source venv/bin/activate,
 Windows: venv\Scripts\activate 
 
 ## 2. Install dependencies
+'''bash
 pip install -r requirements.txt
-
+'''
 ## 3. Configure .env file
 GEMINI_API_KEY=your_gemini_key, 
 GEMINI_MODEL=gemini-2.5-flash
