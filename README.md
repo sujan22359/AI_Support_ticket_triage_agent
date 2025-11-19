@@ -15,8 +15,10 @@ This project fulfills the complete requirements of the assignment.
 # Installation
 
 ## 1. Create virtual environment
+'''
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+source venv/bin/activate   
+Windows: venv\Scripts\activate  '''
 
 ## 2. Install dependencies
 pip install -r requirements.txt
