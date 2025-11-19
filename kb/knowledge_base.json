@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ISSUE-101",
+    "title": "Checkout returns HTTP 500 error on mobile devices",
+    "category": "Bug",
+    "symptoms": ["500 error", "mobile checkout", "payment failure", "server error"],
+    "recommended_action": "Escalate to Payments Team. Collect logs, device model, OS version, and timestamp."
+  },
+  {
+    "id": "ISSUE-102",
+    "title": "Password reset email not received",
+    "category": "Login",
+    "symptoms": ["password reset", "email not received", "reset link not coming"],
+    "recommended_action": "Check email service (SES/SMTP) status. Ask user for alternate email. Resend token."
+  },
+  {
+    "id": "ISSUE-103",
+    "title": "Dashboard loads slowly for logged-in users",
+    "category": "Performance",
+    "symptoms": ["slow dashboard", "high latency", "sluggish UI"],
+    "recommended_action": "Capture network waterfall. Inspect DB slow queries. Escalate to Infra Team."
+  },
+  {
+    "id": "ISSUE-104",
+    "title": "Unable to login due to invalid session token",
+    "category": "Login",
+    "symptoms": ["session expired", "token invalid", "forced logout"],
+    "recommended_action": "Clear cookies. Reissue session token. Check authentication service logs."
+  },
+  {
+    "id": "ISSUE-105",
+    "title": "Payment declined for valid cards",
+    "category": "Billing",
+    "symptoms": ["payment declined", "valid card rejected", "card processing error"],
+    "recommended_action": "Verify payment gateway status. Request card BIN. Retry with alternate gateway."
+  },
+  {
+    "id": "ISSUE-106",
+    "title": "Search results not loading",
+    "category": "Bug",
+    "symptoms": ["search empty", "search not loading", "no results returned"],
+    "recommended_action": "Check search microservice health. Validate query payload. Restart search worker."
+  },
+  {
+    "id": "ISSUE-107",
+    "title": "Orders page displays blank screen",
+    "category": "Bug",
+    "symptoms": ["blank orders page", "UI not rendering", "JS error"],
+    "recommended_action": "Check front-end JS console for stack traces. Roll back recent UI deployment."
+  },
+  {
+    "id": "ISSUE-108",
+    "title": "Push notifications not received",
+    "category": "Notification",
+    "symptoms": ["push notification not received", "FCM not working"],
+    "recommended_action": "Verify FCM/APNs token registration. Check app permissions. Validate push gateway health."
+  },
+  {
+    "id": "ISSUE-109",
+    "title": "App crashes on startup for Android 11 users",
+    "category": "Bug",
+    "symptoms": ["app crash", "Android 11", "startup crash"],
+    "recommended_action": "Collect crash logs. Check ProGuard config. Escalate to Mobile Team."
+  },
+  {
+    "id": "ISSUE-110",
+    "title": "Invoice PDF not generating",
+    "category": "Billing",
+    "symptoms": ["invoice not generating", "pdf error", "download failed"],
+    "recommended_action": "Check PDF generation microservice. Validate template engine. Retry with sample order."
+  },
+  {
+    "id": "ISSUE-111",
+    "title": "Unable to update profile details",
+    "category": "User Profile",
+    "symptoms": ["profile update failed", "cannot save profile", "validation error"],
+    "recommended_action": "Check user-service validation rules. Reproduce with demo account. Inspect backend logs."
+  },
+  {
+    "id": "ISSUE-112",
+    "title": "Two-Factor Authentication SMS not delivered",
+    "category": "Login",
+    "symptoms": ["2FA sms not received", "otp failure"],
+    "recommended_action": "Verify SMS gateway uptime. Check phone blacklist. Regenerate OTP."
+  },
+  {
+    "id": "ISSUE-113",
+    "title": "User receives repeated duplicate notifications",
+    "category": "Notification",
+    "symptoms": ["duplicate notifications", "notification spam", "multiple alerts"],
+    "recommended_action": "Check notification worker queue. Deduplicate messages. Inspect retry policies."
+  },
+  {
+    "id": "ISSUE-114",
+    "title": "App data not syncing across multiple devices",
+    "category": "Sync",
+    "symptoms": ["data not synced", "multi-device mismatch", "sync delay"],
+    "recommended_action": "Check sync cron jobs. Inspect conflict resolution logic. Escalate to Backend Sync Team."
+  },
+  {
+    "id": "ISSUE-115",
+    "title": "Unable to upload profile picture",
+    "category": "User Profile",
+    "symptoms": ["upload failed", "image upload error", "file too large", "S3 upload failed"],
+    "recommended_action": "Validate file size/type. Check S3 bucket permissions. Retry upload with reduced resolution."
+  }
+]
