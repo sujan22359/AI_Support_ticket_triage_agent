@@ -1,10 +1,9 @@
 import streamlit as st
 import requests
 
-# Set FastAPI backend URL
 API_URL = "http://localhost:8000/triage"
 
-st.set_page_config(page_title="AI Ticket Triage", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="AI Ticket Triage", layout="centered")
 
 st.title("Support Ticket Triage Agent")
 st.write("Enter a support ticket description and let the AI classify & suggest next actions.")

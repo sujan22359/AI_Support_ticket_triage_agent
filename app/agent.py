@@ -1,7 +1,6 @@
 from .kb_search import search_kb
 from .llm_client import gemini_extract
 
-# Threshold for deciding a KB match (tune if needed)
 KB_MATCH_THRESHOLD = 0.40
 
 def triage_ticket(description: str) -> dict:
